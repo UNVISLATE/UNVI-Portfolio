@@ -1,0 +1,50 @@
+:root {
+    --color-darkest: #0D1017;
+    --color-dark: #131722;
+
+    --color-primary: #00B3A7;
+    --color-primary-light: #33C8BE;
+    --color-primary-dark: #00685D;
+    --color-accent: #B9A5F5;
+    --color-accent-dark: #9C87DB;
+
+    --color-white: #ffffff;
+    --color-black: #0A0A0A;
+	--color-dark-gray: #1E1E1E;
+	--color-light-gray: #E4E4E4;
+
+    --black-50: rgba(13, 16, 23, 0.5);
+    --black-25: rgba(13, 16, 23, 0.25);
+    --black-10: rgba(13, 16, 23, 0.1);
+    --white-50: rgba(255, 255, 255, 0.5);
+    --white-25: rgba(255, 255, 255, 0.25);
+    --white-10: rgba(255, 255, 255, 0.1);
+
+    --color-highlight: #00D0BF;
+	--color-deep-purple: #573A8B;
+	--color-gradient-top: #00B3A7;
+	--color-gradient-bottom: #00685D;
+
+    --gradient-primary: linear-gradient(145deg, #00B3A7, #00685D);
+	--gradient-accent: linear-gradient(145deg, #B9A5F5, #573A8B);
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #BFBFBF;
+    --text-accent: var(--color-accent);
+
+    --webkit-scrollbar-background-color: rgba(63, 63, 63, 0.0);
+    --webkit-scrollbar-shadow-color: rgb(0, 0, 0);
+    --webkit-scrollbar-color: rgba(63, 63, 63, 0.7);
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+h2, h3, h4, h5, h6, p {
+    color: var(--text-primary);
+}
+
+p {
+    color: var(--text-secondary);
+}

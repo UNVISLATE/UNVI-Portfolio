@@ -1,0 +1,42 @@
+{
+    "header": {
+        "lang_toggle": "English (EN)",
+        "home": "Home",
+        "about": "About Me",
+        "projects": "My Projects",
+        "contacts": "Contacts"
+    },
+    "hero": {
+        "name": "Andrey (UNVI)",
+        "description": "Python Backend Developer",
+        "learn_more": "Learn More"
+    },
+    "about": {
+        "title": "About Me",
+        "text": "Hi, I'm <strong>Andrey (UNVI)</strong>, a Python backend developer passionate about building scalable, efficient, and reliable systems. My experience includes developing Telegram bots with <strong>telebot</strong> and <strong>aiogram</strong>, as well as creating Discord integrations using <strong>discord.py</strong>. I work extensively with backend frameworks like <strong>Flask</strong>, <strong>Quart</strong>, and <strong>FastAPI</strong>, and I'm comfortable designing robust APIs and handling asynchronous workflows.<br>Beyond Python, I enjoy working with tools and technologies such as <strong>Redis</strong>, <strong>Docker</strong>, and databases like <strong>MySQL</strong>, <strong>MariaDB</strong>, and <strong>SQLite</strong>. I’m driven by the challenge of solving real-world problems and continually refining my craft to deliver clean, maintainable, and effective solutions."
+    },
+    "projects": {
+        "title": "Projects"
+    },
+    "services": {
+        "title": "Services",
+        "text": "I offer services in developing Telegram and Discord bots, as well as creating APIs and backend systems for web applications. My services include design, development, and deployment of your projects on a server."
+    },
+    "github": {
+        "title": "My GitHub",
+        "profile": {
+            "repositories": "Repositories: ",
+            "gists": "Gists: ",
+            "created_at": "Created at: "
+        },
+        "repositories": "Repositories",
+        "gists": "Gists"
+    },
+    "contacts": {
+        "title": "Contacts",
+        "text": "If you have any questions or would like to discuss the project, please feel free to contact me via Telegram or Email."
+    },
+    "footer": {
+        "text": "© 2025 UNVI.XYZ. All rights reserved."
+    }
+}

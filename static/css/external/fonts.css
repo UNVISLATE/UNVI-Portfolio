@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "ZP-Regular";
+    src: url("/static/fonts/ZonaPro-Regular.woff2");
+}
+
+@font-face {
+    font-family: "ZP-Bold";
+    src: url("/static/fonts/ZonaPro-Bold.woff2");
+}
+
+@font-face {
+    font-family: "ZP-SemiBold";
+    src: url("/static/fonts/ZonaPro-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: "WU";
+    src: url("/static/fonts/wadik.otf");
+}
+
+/* Font Families */
+body {
+    font-family: "ZP-Regular", sans-serif;
+}
+
+h1 {
+    font-family: 'ZP-Bold', serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'ZP-SemiBold', serif;
+}

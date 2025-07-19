@@ -1,0 +1,38 @@
+.i18n-loading {
+  color: transparent;
+  user-select: none;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.06) 25%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.06) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.2s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.i18n-loading::before,
+.i18n-loading::after,
+.i18n-loading *::before,
+.i18n-loading *::after {
+  content: none !important;
+}
+
+.i18n-loading,
+.i18n-loading * {
+  color: transparent !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+  background-color: transparent !important;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

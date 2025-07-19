@@ -1,0 +1,42 @@
+{
+    "header": {
+        "lang_toggle": "Русский (RU)",
+        "home": "Домой",
+        "about": "Обо мне",
+        "projects": "Мои проекты",
+        "contacts": "Контакты"
+    },
+    "hero": {
+        "name": "Андрей (UNVI)",
+        "description": "Бэкенд-разработчик Python",
+        "learn_more": "Узнать больше"
+    },
+    "about": {
+        "title": "Обо мне",
+        "text": "Привет, я <strong>Андрей (UNVI)</strong>, бэкенд разработчик на Python, увлеченный созданием масштабируемых, эффективных и надежных систем. Мой опыт включает в себя разработку Telegram-ботов с помощью <strong>telebot</strong> и <strong>aiogram</strong>, создание интеграций Discord с помощью <strong>discord.py</strong>. <br>Я много работаю с бэкенд фреймворками, такими как <strong>Flask</strong>, <strong>Quart</strong> и <strong>FastAPI</strong>, и я уверенно разрабатываю надежные и поддерживаемые API. Помимо Python, я работаю с такими инструментами и технологиями, как <strong>Redis</strong>, <strong>Docker</strong> и базами данных, такими как <strong>MySQL</strong>, <strong>MariaDB</strong> и <strong>MongoDB</strong>. <br>Я решаю реальные проблемы и задачи, а также постоянно совершенствую свое мастерство, чтобы предлагать чистые, поддерживаемые и эффективные решения."
+    },
+    "projects": {
+        "title": "Проекты"
+    },
+    "services": {
+        "title": "Услуги",
+        "text": "Я предлагаю услуги по разработке Telegram и Discord ботов, а также созданию API и бэкенда для веб-приложений. Мои услуги включают в себя проектирование, разработку и установку на сервере ваших проектов."
+    },
+    "github": {
+        "title": "Мой GitHub",
+        "profile": {
+            "repositories": "Репозитории: ",
+            "gists": "Gists: ",
+            "created_at": "Создан: "
+        },
+        "repositories": "Репозитории",
+        "gists": "Gists"
+    },
+    "contacts": {
+        "title": "Контакты",
+        "text": "Если у вас есть вопросы или вы хотите обсудить проект, не стесняйтесь связаться со мной по Telegram или Email."
+    },
+    "footer": {
+        "text": "© 2025 UNVI.XYZ. Все права защищены."
+    }
+}

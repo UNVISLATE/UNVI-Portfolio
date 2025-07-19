@@ -1,0 +1,46 @@
+[
+    {
+        "logo": "/static/img/icons/python.svg",
+        "text": "Python"
+    },
+    {
+        "logo": "/static/img/icons/flask.svg",
+        "text": "Flask"
+    },
+    {
+        "logo": "/static/img/icons/fastapi.svg",
+        "text": "FastAPI"
+    },
+    {
+        "logo": "/static/img/icons/docker.svg",
+        "text": "Docker"
+    },
+    {
+        "logo": "/static/img/icons/redis.svg",
+        "text": "Redis"
+    },
+    {
+        "logo": "/static/img/icons/sqlite.svg",
+        "text": "SQLite"
+    },
+    {
+        "logo": "/static/img/icons/mysql.svg",
+        "text": "MySQL"
+    },
+    {
+        "logo": "/static/img/icons/mongodb.svg",
+        "text": "MongoDB"
+    },
+    {
+        "logo": "/static/img/icons/html5.svg",
+        "text": "HTML"
+    },
+    {
+        "logo": "/static/img/icons/css.svg",
+        "text": "CSS"
+    },
+    {
+        "logo": "/static/img/icons/javascript.svg",
+        "text": "JavaScript"
+    }
+]

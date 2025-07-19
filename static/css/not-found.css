@@ -1,0 +1,77 @@
+@import url('./external/fonts.css');
+@import url('./external/colors.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--color-darkest);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+    overflow: hidden;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(19, 23, 34, 0.7);
+    border: 1px solid var(--white-10);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 10px 30px var(--black-50);
+    animation: fadeIn 1s ease-out;
+}
+
+.card h1 {
+    font-size: 6rem;
+    margin: 0;
+    background: var(--color-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin: 20px 0 10px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: 600;
+    background: var(--color-accent);
+    color: var(--color-darkest);
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px var(--black-25);
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px var(--black-50);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}

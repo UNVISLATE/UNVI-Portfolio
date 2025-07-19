@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Telegram Bot Development",
+        "description": "Creating bots for Telegram.",
+        "list": [
+            "Telegram bot of any complexity",
+            "Admin panel for bot management",
+            "Integration with external APIs",
+            "Support and updates for existing bots",
+            "Installation and configuration on the server",
+            "Free revisions",
+            "From 4 days depending on project complexity"
+        ],
+        "price": "from 65 USD"
+    },
+    {
+        "name": "Discord Bot Development",
+        "description": "Developing integrations for Discord",
+        "list": [
+            "Discord bot of any complexity",
+            "Admin panel for bot management",
+            "Integration with external APIs",
+            "Support and updates for existing bots",
+            "Installation and configuration on the server",
+            "Free revisions",
+            "From 4 days depending on project complexity"
+        ],
+        "price": "from 65 USD"
+    },
+    {
+        "name": "API/Backend Development for Web Applications",
+        "description": "Designing and implementing robust APIs using Flask, Quart, and FastAPI.",
+        "list": [
+            "Designing RESTful APIs",
+            "API documentation using Swagger or OpenAPI",
+            "Database integration",
+            "High-performance asynchronous APIs",
+            "Deployment and server setup",
+            "Free revisions",
+            "User authentication and authorization via OAuth2 or custom systems",
+            "From 5 days depending on project complexity"
+        ],
+        "price": "from 150 USD"
+    }
+]
