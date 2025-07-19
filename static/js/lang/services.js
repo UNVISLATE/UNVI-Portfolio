@@ -9,21 +9,21 @@ function showSkeletons() {
     const skeleton = document.createElement('div');
     skeleton.className = 'service skeleton';
     skeleton.innerHTML = `
-      <h3 class="skeleton-box" style="width: 60%; height: 1.2em;"></h3>
-      <p class="skeleton-box" style="width: 80%; height: 1em;"></p>
+      <h3 class="skeleton-box" style="width: 60%; height: 1.5em;"></h3>
+      <p class="skeleton-box" style="width: 80%; height: 1.3em;"></p>
       <div class="service-items">
-        ${Array.from({ length: 3 }).map(() => `
+        ${Array.from({ length: 5 }).map(() => `
           <div class="item">
             <div class="skeleton-icon"></div>
-            <span class="skeleton-box" style="width: 60%; height: 1em;"></span>
+            <span class="skeleton-box" style="width: 60%; height: 1.2em;"></span>
           </div>
         `).join('')}
       </div>
       <div class="price">
-        <p class="skeleton-box" style="width: 40%; height: 1em;"></p>
+        <p class="skeleton-box" style="width: 40%; height: 1.5em;"></p>
       </div>
       <div class="service-button">
-        <div class="skeleton-box" style="width: 50%; height: 2em;"></div>
+        <div class="skeleton-box" style="width: 50%; height: 2.5em;"></div>
       </div>
     `;
     servicesContainer.appendChild(skeleton);
@@ -68,12 +68,11 @@ export async function apply(lang) {
     const servicesData = await response.json();
     if (!Array.isArray(servicesData)) throw new Error('Invalid services data format');
 
-    // Имитация загрузки (для демонстрации скелетонов)
-    await new Promise(res => setTimeout(res, 400)); // можно убрать
+    await new Promise(res => setTimeout(res, 400));
 
     renderServices(servicesData);
   } catch (error) {
-    console.error('[services.js] Failed to load or render services:', error);
+    console.error('[lang/services.js] Failed to load or render services:', error);
     servicesContainer.innerHTML = '<p class="error">Ошибка загрузки услуг</p>';
   }
 }
