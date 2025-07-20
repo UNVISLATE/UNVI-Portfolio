@@ -13,6 +13,7 @@
 	--color-dark-gray: #1E1E1E;
 	--color-light-gray: #E4E4E4;
 
+    --black-70: rgba(13, 16, 23, 0.7);
     --black-50: rgba(13, 16, 23, 0.5);
     --black-25: rgba(13, 16, 23, 0.25);
     --black-10: rgba(13, 16, 23, 0.1);

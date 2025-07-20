@@ -24,13 +24,10 @@
     },
     "github": {
         "title": "My GitHub",
-        "profile": {
-            "repositories": "Repositories: ",
-            "gists": "Gists: ",
-            "created_at": "Created at: "
+        "additional": {
+            "arhive": "arhived"
         },
-        "repositories": "Repositories",
-        "gists": "Gists"
+        "more-link": "See more on GitHub"
     },
     "contacts": {
         "title": "Contacts",

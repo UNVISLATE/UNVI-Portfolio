@@ -2,7 +2,7 @@
 @import url('./external/colors.css');
 @import url('./external/sceleton.css');
 @import url('./external/i18n-loader.css');
-
+@import url('./external/github.css');
 @import url('./external/header.css');
 @import url('./external/footer.css');
 @import url('./external/hero.css');
@@ -317,9 +317,6 @@ a {
     color: var(--color-primary-light);
     border-color: transparent;
 }
-
-/* Github */
-/* Позже */
 
 /* Contacts */
 /* Позже */

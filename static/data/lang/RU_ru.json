@@ -24,13 +24,10 @@
     },
     "github": {
         "title": "Мой GitHub",
-        "profile": {
-            "repositories": "Репозитории: ",
-            "gists": "Gists: ",
-            "created_at": "Создан: "
+        "additional": {
+            "arhive": "архивирован"
         },
-        "repositories": "Репозитории",
-        "gists": "Gists"
+        "more-link": "Смотреть больше на GitHub"
     },
     "contacts": {
         "title": "Контакты",

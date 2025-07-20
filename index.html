@@ -7,19 +7,19 @@
     <meta name="author" content="Andrey UNVI - UNVI.XYZ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio UNVI.XYZ</title>
+    <title>Andrey UNVI - Python backend developer</title>
     <meta name="og:title" content="Andrey UNVI - Python Backend Developer">
     <meta name="description" content="Andrey (UNVI) - Python backend developer. Explore my portfolio showcasing my skills in web backend development, software design, and more.">
     <meta name="og:description" content="Explore my portfolio showcasing my skills in web backend development, software design, and more.">
-    <!-- 
     <meta name="og:image" content="https://unvi.xyz/static/img/og_image.webp"> 
     <meta name="og:url" content="https://unvi.xyz">
     <meta name="og:type" content="website">
     <meta name="og:site_name" content="UNVI.XYZ - Portfolio of Andrey UNVI">
-    -->
 
     <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="/static/js/header_scroll_blur.js"></script>
     <script src="/static/js/smooth_scroll.js"></script>
     <script src="/static/js/scroll_animate.js"></script>
@@ -137,7 +137,10 @@
 
         <section id="github" class="content-block">
             <h2 data-i18n="github.title">My GitHub</h2>
-            <p>Скоро здесь будет информация и проекты из моего GitHub, еще не успел добавить :)</p>
+            <div class="github-profile"></div>
+            <div class="github-repositories"></div>
+            <div class="github-gists"></div>
+            <a class="more-link" href="https://github.com/UNCISLATE" target="_blank" data-i18n="github.more_link">See more on GitHub</a>
         </section>
 
         <section id="contacts" class="content-block">
@@ -227,7 +230,9 @@
             });
         });
     </script>
+    <script>hljs.highlightAll();</script>
     <script src="/static/js/tech_marquee.js"></script>
     <script src="/static/js/lang.js"></script>
+    <script src="/static/js/github_loader.js"></script>
 </body>
 </html>
