@@ -91,14 +91,17 @@ async function loadRepositories() {
   try {
     const repos = await fetchJSON(`https://api.github.com/users/${username}/repos`);
     container.innerHTML = "";
-    const validRepos = repos.filter((repo) => !repo.fork).slice(0, MAX_ITEMS);
+    const sortedRepos = repos
+      .filter((repo) => !repo.fork)
+      .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+      .slice(0, MAX_ITEMS);
 
-    validRepos.forEach((repo) => {
+    sortedRepos.forEach((repo) => {
       const a = createEl("a", "repository");
       a.href = repo.html_url;
       a.target = "_blank";
 
-      const name = truncate(repo.name || "None", 25);
+      const name = truncate(repo.name || "None", 20);
       const title = `
         <div class="repo-title">
           <img src="/static/img/icons/github-repository.svg" alt="Repository Icon">

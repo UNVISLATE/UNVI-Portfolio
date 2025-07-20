@@ -11,7 +11,7 @@
             "Free revisions",
             "From 4 days depending on project complexity"
         ],
-        "price": "from 65 USD"
+        "price": "from 119 USD"
     },
     {
         "name": "Discord Bot Development",
@@ -25,7 +25,7 @@
             "Free revisions",
             "From 4 days depending on project complexity"
         ],
-        "price": "from 65 USD"
+        "price": "from 119 USD"
     },
     {
         "name": "API/Backend Development for Web Applications",
@@ -40,6 +40,6 @@
             "User authentication and authorization via OAuth2 or custom systems",
             "From 5 days depending on project complexity"
         ],
-        "price": "from 150 USD"
+        "price": "from 255 USD"
     }
 ]

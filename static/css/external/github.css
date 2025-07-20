@@ -1,7 +1,12 @@
+.github-profile-wrapper {
+    display: grid;
+    margin: 20px 0;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
 .github-profile {
     display: flex;
-    max-width: 300px;
-    margin-bottom: 20px;
     padding: 10px;
     border-radius: 6px;
     background-color: var(--black-50);
