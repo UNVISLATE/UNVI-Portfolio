@@ -1,7 +1,7 @@
 const username = "UNVISLATE";
 const MAX_ITEMS = 3;
 
-// ========== UTILS ========== //
+// Utility functions
 const formatDate = (iso) => new Date(iso).toLocaleDateString("en-GB");
 const truncate = (str, len) => (str.length > len ? str.slice(0, len) + "..." : str);
 const fetchJSON = (url) => fetch(url).then((r) => r.json());
@@ -12,7 +12,7 @@ const createEl = (tag, cls, html = "") => {
   return el;
 };
 
-// ========== SKELETON HELPERS ========== //
+// skeletons loader
 function showProfileSkeleton() {
   const container = document.querySelector(".github-profile");
   container.innerHTML = `
@@ -66,7 +66,7 @@ function showGistSkeletons(count = 3) {
   }
 }
 
-// ========== PROFILE ========== //
+// profile loader
 async function loadProfile() {
   showProfileSkeleton();
   const container = document.querySelector(".github-profile");
@@ -84,19 +84,19 @@ async function loadProfile() {
   }
 }
 
-// ========== PROJECTS ========== //
+// projects loader
 async function loadRepositories() {
   showRepoSkeletons();
   const container = document.querySelector(".github-repositories");
+
   try {
     const repos = await fetchJSON(`https://api.github.com/users/${username}/repos`);
-    container.innerHTML = "";
     const sortedRepos = repos
-      .filter((repo) => !repo.fork)
+      .filter(repo => !repo.fork)
       .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
       .slice(0, MAX_ITEMS);
 
-    sortedRepos.forEach((repo) => {
+    const repoElements = sortedRepos.map(repo => {
       const a = createEl("a", "repository");
       a.href = repo.html_url;
       a.target = "_blank";
@@ -109,7 +109,7 @@ async function loadRepositories() {
           ${repo.archived ? `
             <div class="arhive-warning">
               <img src="/static/img/icons/repository-arhive.svg" alt="Archive Icon">
-              <span data-i18n="github.additional.arhive">arhived</span>
+              <span data-i18n="github.additional.arhive">archived</span>
             </div>` : ""}
         </div>`;
 
@@ -138,21 +138,29 @@ async function loadRepositories() {
         </div>`;
 
       a.innerHTML = title + description + stats;
-      container.appendChild(a);
+      return a;
     });
+
+    await new Promise(requestAnimationFrame);
+
+    container.innerHTML = "";
+    repoElements.forEach(el => container.appendChild(el));
   } catch (err) {
     container.innerHTML = `<p class="error">Failed to load repositories.</p>`;
+    console.error("Failed to load repositories", err);
   }
 }
 
-// ========== GISTS ========== //
+// gists loader
 async function loadGists() {
   showGistSkeletons();
   const container = document.querySelector(".github-gists");
+
   try {
     const gists = await fetchJSON(`https://api.github.com/users/${username}/gists`);
-    container.innerHTML = "";
     const displayed = gists.slice(0, MAX_ITEMS);
+
+    const gistElements = [];
 
     for (const gist of displayed) {
       const a = createEl("a", "gist");
@@ -165,10 +173,9 @@ async function loadGists() {
           <img src="/static/img/icons/gist.svg" alt="Gist Icon">
           <p>${name}</p>
         </div>`;
-
       const filesList = Object.values(gist.files)
         .slice(0, 3)
-        .map((f) => `<span>${f.filename}</span>`)
+        .map(f => `<span>${f.filename}</span>`)
         .join("");
 
       const codeContainer = createEl("div", "gist-code");
@@ -178,11 +185,11 @@ async function loadGists() {
 
       const firstFile = Object.values(gist.files)[0];
       try {
-        const raw = await fetch(firstFile.raw_url).then((r) => r.text());
+        const raw = await fetch(firstFile.raw_url).then(r => r.text());
         const snippet = raw
           .split("\n")
           .slice(0, 5)
-          .map((line) => truncate(line, 40))
+          .map(line => truncate(line, 40))
           .join("\n");
         codeInner.textContent = snippet;
       } catch {
@@ -195,16 +202,22 @@ async function loadGists() {
       a.innerHTML = title;
       a.innerHTML += `<div class="gist-files">${filesList}</div>`;
       a.appendChild(codeContainer);
-      container.appendChild(a);
+
+      gistElements.push(a);
     }
+
+    await new Promise(requestAnimationFrame);
+    container.innerHTML = "";
+    gistElements.forEach(el => container.appendChild(el));
 
     if (window.hljs) hljs.highlightAll();
   } catch (err) {
     container.innerHTML = `<p class="error">Failed to load gists.</p>`;
+    console.error("[github_loader.js] Failed to load gists", err);
   }
 }
 
-// ========== INIT ========== //
+// init
 document.addEventListener("DOMContentLoaded", () => {
   loadProfile();
   loadRepositories();

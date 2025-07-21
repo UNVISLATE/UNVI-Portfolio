@@ -1,0 +1,44 @@
+[
+    {
+        "avatar": "https://t.me/i/userpic/320/UNVISLATE.jpg",
+        "icon": "/static/img/icons/telegram.svg",
+        "name": "Telegram",
+        "username": "Andrey (UNVI)",
+        "url": "https://t.me/UNVISLATE"
+    },
+    {
+        "avatar": "/static/img/avatar.webp",
+        "icon": "/static/img/icons/discord.svg",
+        "name": "Discord",
+        "username": "UNVI",
+        "url": "https://unvi.xyz/#contacts"
+    },
+    {
+        "avatar": "https://avatars.githubusercontent.com/UNVISLATE",
+        "icon": "/static/img/icons/github.svg",
+        "name": "GitHub",
+        "username": "Andrey (UNVI)",
+        "url": "https://github.com/UNVISLATE"
+    },
+    {
+        "avatar": "https://t.me/i/userpic/320/UNVISLATE.jpg",
+        "icon": "/static/img/icons/telegram.svg",
+        "name": "Blog (Teletype)",
+        "username": "Andrey (UNVI)",
+        "url": "https://blog.unvi.xyz"
+    },
+    {
+        "avatar": "https://unavatar.io/youtube/UNVISLATE",
+        "icon": "/static/img/icons/youtube.svg",
+        "name": "YouTube",
+        "username": "UNVISLATE",
+        "url": "https://www.youtube.com/@UNVISLATE"
+    },
+    {
+        "avatar": "/static/img/avatar/f0e2fc5be80fc3293860cd6e7dbb4fee71076691.gif",
+        "icon": "/static/img/icons/steam.svg",
+        "name": "Steam",
+        "username": "UNVISLATE",
+        "url": "https://steamcommunity.com/id/UNVISLATE"
+    }
+]

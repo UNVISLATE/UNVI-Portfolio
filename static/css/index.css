@@ -319,4 +319,59 @@ a {
 }
 
 /* Contacts */
-/* Позже */
+.contacts-wrapper {
+    display: grid;
+    margin: 20px 0;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.contacts-wrapper .contact {
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--black-50);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contacts-wrapper .contact:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.contacts-wrapper .contact .profile-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.contacts-wrapper .contact .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contacts-wrapper .contact .contact-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contacts-wrapper .contact .contact-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.contacts-wrapper .contact p {
+    color: var(--color-primary);
+    margin: 5px 0 0;
+}
+
+.contacts-wrapper .contact span {
+    color: var(--text-secondary);
+    font-weight: bold;
+}
